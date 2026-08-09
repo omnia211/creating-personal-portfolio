@@ -538,8 +538,16 @@ textarea {
         margin: 0 8px;
     }
 
+
     header .header-content {
         grid-template-columns: 1fr;
+        text-align: center;
+        justify-items: center;
+    }
+
+    header .header-content .social {
+        display: flex;
+        justify-content: center;
     }
 
     header .header-content .header-text {
@@ -574,4 +582,125 @@ textarea {
     }
 }
 
-/* mobile responsive */
+@media (max-width: 768px) {
+    section {
+        padding: 60px 20px;
+    }
+
+    header .header-content h1 {
+        font-size: 50px;
+    }
+
+    #skills .skills-content .row .item:nth-child(5),
+    #skills .skills-content .row .item:nth-child(6),
+    #skills .skills-content .row .item:nth-child(8) {
+        max-width: 100%;
+        height: auto;
+    }
+
+  .projects .content {
+    justify-content: center;
+}
+
+.project_cards {
+    width: calc(50% - 40px);
+    min-width: 250px;
+}
+    
+    #contact .row {
+        padding: 1.5rem;
+    }
+}
+
+/* Mobile phones */
+@media (max-width: 480px) {
+    .container {
+        padding: 0 1rem;
+    }
+
+    header {
+        height: auto;
+        min-height: 100vh;
+    }
+
+    header .navbar nav {
+        padding: 1rem;
+    }
+
+    #logo {
+        font-size: 20px;
+    }
+
+    header .navbar nav ul a {
+        margin: 0 6px;
+        font-size: 13px;
+    }
+
+    header .header-content {
+        padding: 6rem 1rem 2rem;
+    }
+    
+
+    header .header-content h1 {
+        font-size: 34px;
+    }
+
+    header .header-content .title {
+        font-size: 16px;
+    }
+
+    header .header-content img {
+        max-width: 200px;
+        margin-bottom: 3rem;
+    }
+
+    .about,
+    #skills,
+    #services,
+    #contact {
+        padding: 3rem 0;
+    }
+
+    .about h2,
+    #skills h2,
+    #services h2,
+    .projects h2,
+    #contact h2 {
+        font-size: 26px;
+    }
+
+    section {
+        padding: 40px 15px;
+    }
+
+    .about .about-content .col-1 h3 {
+        font-size: 22px;
+    }
+
+    #skills .skills-content .row,
+    #services .row {
+        grid-template-columns: 1fr;
+    }
+
+    #skills .skills-content .row .item {
+        margin: 10px 0;
+    }
+
+    .project_cards {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    #contact .row {
+        padding: 1rem;
+    }
+
+    #contact .row img {
+        max-width: 180px;
+        height: auto;
+    }
+
+    footer#footer p {
+        font-size: 13px;
+    }
+}
